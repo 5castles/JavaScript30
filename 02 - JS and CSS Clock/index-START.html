@@ -6,7 +6,6 @@
 </head>
 <body>
 
-
     <div class="clock">
       <div class="clock-face">
         <div class="hand hour-hand"></div>
@@ -14,7 +13,6 @@
         <div class="hand second-hand"></div>
       </div>
     </div>
-
 
   <style>
     html {
@@ -62,13 +60,28 @@
       background: black;
       position: absolute;
       top: 50%;
+      transform:rotate(90deg);
+      transform-origin: 100%;
+      transition: all .03s;
+      transition-timing-function: cubic-bezier(0.43, 2.95, 0.51, 0.66);
     }
+    .hour-hand{
+      position: absolute;
+      top: 49.3%;
+      right:50%;
+      transform-origin: 100%;
+      width: 30%;
+    }
+    .min-hand{
+      height: 4px;
+    }
+    .second-hand{
+      height: 2px;
+    }
+    
 
-  </style>
-
-  <script>
-
-
-  </script>
+  </style >
+  
+  <script src="index.js"></script>
 </body>
 </html>

@@ -29,6 +29,7 @@ init();
     javascript  keyCode 값은  https://keycode.info/
     audio.currentTime = 0;     // 재생 원하는 오디오가 이미 재생 중인 경우 재생안됨. currentTime=0; 설정하면 재생중일지라도 오디오 재생가능.
     audio.play()
-    addEventListener('transitionend', function); // CSS transition 끝나는 경우. 
+    addEventListener('keydown', )   // 키보드 입력 시
+    addEventListener('transitionend', ); // CSS transition 끝나는 경우. 
     this      // 아직 완벽히 이해 못한 경우 console.log(this)를 통해 간단히 this 확인 가능. 
 */
