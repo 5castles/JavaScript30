@@ -5,15 +5,15 @@ const hourHand = document.querySelector('.hour-hand'),
 function getTime(){
     const time = new Date();
     const seconds = time.getSeconds();
-    const secondsDegrees = ((seconds/60) * 360) + 90;
+    const secondsDegrees = ((seconds/60) * 3.6) + 90;
     secondHand.style.transform=`rotate(${secondsDegrees}deg)`;
 
     const minutes = time.getMinutes();
-    const minutesDegrees = ((minutes/60) * 360) + 90;
+    const minutesDegrees = ((minutes/60) * 3.6) + 90;
     minHand.style.transform=`rotate(${minutesDegrees}deg)`;
 
     const hours = time.getHours();
-    const hoursDegrees = ((hours/12) * 360) + 90;
+    const hoursDegrees = ((hours/12) * 3.6) + 90;
     hourHand.style.transform=`rotate(${hoursDegrees}deg)`;
 
     console.log(hours, minutes, seconds)
